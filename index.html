@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Héctor Tonelli — Perfil Ejecutivo</title>
+  <style>
+    :root{
+      --bg: #0e1b22;
+      --card: #16232b;
+      --accent: #d9e1e6;
+      --muted: #94a3b8;
+      --primary: #00b4d8;
+      --radius: 12px;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box;transition:all .25s ease;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      line-height:1.45;
+      padding:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+    }
+    .wrap{
+      width:100%;
+      max-width:980px;
+      display:grid;
+      grid-template-columns:320px 1fr;
+      gap:28px;
+    }
+    .panel{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 6px 20px rgba(0,0,0,0.25);
+      padding:26px;
+    }
+    .left{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:center;
+      text-align:center;
+    }
+    .photo{
+      width:160px;
+      height:160px;
+      border-radius:50%;
+      overflow:hidden;
+      background:#1f2d36;
+      display:block;
+      margin:0 auto 6px;
+      border:2px solid var(--primary);
+    }
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{font-size:22px;margin:6px 0 0;color:#e2e8f0}
+    .role{font-size:14px;color:var(--muted);margin-bottom:6px}
+    .contact{
+      width:100%;
+      margin-top:6px;
+      text-align:left;
+    }
+    .contact a{
+      display:block;
+      font-size:14px;
+      color:var(--accent);
+      text-decoration:none;
+      margin:6px 0;
+    }
+    .contact a:hover{color:var(--primary)}
+    .skills{
+      width:100%;
+      text-align:left;
+    }
+    .skill{
+      font-size:14px;
+      color:var(--muted);
+      margin:6px 0;
+      display:flex;
+      justify-content:space-between;
+    }
+    .right{
+      padding:6px 18px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+    .summary{
+      background:linear-gradient(180deg, rgba(0,180,216,0.08), rgba(0,180,216,0.00));
+      border-radius:10px;
+      padding:18px;
+    }
+    h2{
+      margin:0 0 8px;
+      font-size:16px;
+      color:var(--primary);
+      text-transform:uppercase;
+      letter-spacing:0.5px;
+    }
+    p.lead{
+      margin:0;
+      color:var(--accent);
+      font-size:14px;
+    }
+    .section{padding:12px 0}
+    .item-title{font-weight:600;color:#e2e8f0;font-size:14px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    ul{padding-left:18px;margin:6px 0}
+    li{margin:6px 0;color:var(--accent);font-size:14px}
+    .actions{
+      display:flex;
+      gap:10px;
+      margin-top:10px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+      transition:all .3s ease;
+    }
+    .btn-primary{
+      background:var(--primary);
+      color:#001219;
+      border:1px solid rgba(0,180,216,0.2);
+      box-shadow:0 4px 12px rgba(0,180,216,0.3);
+    }
+    .btn-primary:hover{background:#48cae4;box-shadow:0 0 14px rgba(0,180,216,0.4);}
+    .btn-outline{
+      background:transparent;
+      color:var(--primary);
+      border:1px solid rgba(0,180,216,0.4);
+    }
+    .btn-outline:hover{background:rgba(0,180,216,0.1);}
+    footer{
+      margin-top:16px;
+      font-size:13px;
+      color:var(--muted);
+      text-align:center;
+    }
+    @media(max-width:880px){
+      .wrap{grid-template-columns:1fr; padding:12px}
+      .left{flex-direction:row; align-items:center; text-align:left}
+      .left .contact{margin-left:12px}
+      .photo{width:84px;height:84px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <aside class="panel left" aria-label="Información personal y contacto">
+      <span class="photo" aria-hidden="true">
+        <img src="perfil.jpg" alt="Foto de Héctor Tonelli" onerror="this.style.display='none'">
+      </span>
+      <div>
+        <h1>Héctor Tonelli</h1>
+        <div class="role">Soporte Informático · Coordinador de Proyectos · Profesional Administrativo</div>
+      </div>
+
+      <div class="contact">
+        <div class="item-title">Contacto</div>
+        <a href="mailto:hectortonelli734@gmail.com">hectortonelli734@gmail.com</a>
+        <a href="https://wa.me/5491139388240?text=Hola%20H%C3%A9ctor%2C%20te%20contacto%20desde%20tu%20sitio%20web." target="_blank">+54 11 3938 8240 (WhatsApp)</a>
+      </div>
+
+      <div class="skills">
+        <div class="item-title">Habilidades clave</div>
+        <div class="skill"><span>Gestión de proyectos</span><span>Avanzado</span></div>
+        <div class="skill"><span>Soporte técnico & operaciones</span><span>Avanzado</span></div>
+        <div class="skill"><span>Marketing digital</span><span>Intermedio</span></div>
+        <div class="skill"><span>Coordinación de equipos</span><span>Avanzado</span></div>
+        <div class="skill"><span>Comunicación y liderazgo</span><span>Avanzado</span></div>
+      </div>
+
+      <div style="width:100%;margin-top:14px;">
+        <a class="btn btn-primary" href="cv.pdf" download>⬇️ Descargar CV (PDF)</a>
+      </div>
+    </aside>
+
+    <section class="panel right" aria-label="Resumen profesional y experiencia">
+      <div class="summary">
+        <h2>Resumen ejecutivo</h2>
+        <p class="lead">
+          Profesional con más de 9 años de trayectoria en soporte informático, coordinación de proyectos y gestión operativa. Especializado en la implementación de soluciones tecnológicas y en la optimización de procesos en entornos públicos y corporativos. Orientado a resultados, con pensamiento analítico y capacidad de liderazgo para coordinar equipos multidisciplinarios, priorizando la eficiencia, la innovación y la mejora continua.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Experiencia profesional</h2>
+
+        <div style="margin-top:8px">
+          <div class="item-title">Asesor Informático — Ministerio de Justicia y Derechos Humanos, Buenos Aires</div>
+          <div class="meta">2016 — 2025</div>
+          <ul>
+            <li>Implementación de capacitaciones en sistemas institucionales (GEDE, RUAGA) y soporte técnico integral.</li>
+            <li>Modernización tecnológica y optimización de software de gestión pública.</li>
+            <li>Asistencia y soporte a usuarios en entornos críticos.</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:12px">
+          <div class="item-title">Coordinador General — Festivales Municipales, Buenos Aires</div>
+          <div class="meta">2018 — 2022 (temporadas de verano)</div>
+          <ul>
+            <li>Gestión operativa y logística de eventos culturales masivos.</li>
+            <li>Planificación estratégica y coordinación de equipos.</li>
+            <li>Control de procesos y optimización de recursos.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Formación</h2>
+        <div class="item-title">Bachiller — Programa Adultos 2000, CABA</div>
+        <div class="meta">2020 — 2022</div>
+
+        <div class="item-title" style="margin-top:10px">Técnico en Reparación de Computadoras — Instituto IAC, CABA</div>
+        <div class="meta">2009 — 2010</div>
+      </div>
+
+      <div class="section">
+        <h2>Información adicional</h2>
+        <ul>
+          <li>Idiomas: Español nativo · Inglés básico</li>
+          <li>Disponibilidad full time. Vehículo propio</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/5491139388240?text=Hola%20H%C3%A9ctor%2C%20te%20contacto%20desde%20tu%20sitio%20web." target="_blank">Abrir WhatsApp</a>
+          <a class="btn btn-outline" href="mailto:hectortonelli734@gmail.com">Enviar email</a>
+        </div>
+        <footer>
+          <div>© 2025 Héctor Tonelli — Todos los derechos reservados</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
